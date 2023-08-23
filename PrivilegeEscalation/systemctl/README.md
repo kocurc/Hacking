@@ -54,5 +54,3 @@ systemctl enable /tmp/test.service
 ```sh
 systemctl start test
 ```
-'
-
