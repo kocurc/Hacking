@@ -1,10 +1,11 @@
 # Expected conditions for **systemctl** exploit:
 1. Having access to shell with non-root user.
 2. Having netcat listener running locally on a random port:
+<a name="netcat-section"></a>
 ```
-<a name="netcat-section">nc -lvp 9999</a>
+nc -lvp 9999
 ```
-3. **systemctl** command has SUID bit set.
+1. **systemctl** command has SUID bit set.
    1. To check commands with SUID bit:
       ```
       find / -user root -perm -4000 -exec ls -ldb {} \;
